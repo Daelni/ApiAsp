@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ApiAsp.Entities
+{
+    public class datos
+    {
+        public int Tabla { get; set; }
+        public string Busqueda { get; set; }
+        public int IdJson { get; set; }
+        public string DatJson { get; set; }
+    }
+
+    public class respuestaRequest
+    {
+        public string Err { get; set; }
+        public string ErrDescripcion { get; set; }
+        public string json { get; set; }
+    }
+
+    public class personaDatos
+    {
+        public int Id { get; set; }
+        public string Nombres { get; set; }
+        public string ApellidoP { get; set; }
+        public string ApellidoM { get; set; }
+        public string Direccion { get; set; }
+        public int Telefono { get; set; }
+        public int Estatus { get; set; }
+    }
+
+    public class empresaDatos
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public int Persona { get; set; }
+        public string Direccion { get; set; }
+        public int Telefono { get; set; }
+        public int Estatus { get; set; }
+    }
+}

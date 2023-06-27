@@ -1,0 +1,8 @@
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.csproj.AssemblyReference.cache
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.AssemblyInfoInputs.cache
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.AssemblyInfo.cs
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.csproj.CoreCompileInputs.cache
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.RazorAssemblyInfo.cache
+C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.RazorAssemblyInfo.cs
