@@ -10,12 +10,12 @@ using System.Linq;
 
 namespace ApiAsp.Controllers
 {
-    [RoutePrefix("api/principal")]
-    public class PrincipalController : ApiController
+    [Route("api/principal")]
+    public class PrincipalController : ControllerBase
     {
         [HttpPost]
         [Route("demo")]
-        public IHttpActionResult demo([FromBody] datos datos)
+        public IActionResult Demo([FromBody] datos datos)
         {
             int IdJson = datos.IdJson.ToString() == "" ? 0 : datos.IdJson;
             string DatJson = datos.DatJson.ToString() == "" ? "0" : datos.DatJson.ToString();
@@ -43,7 +43,7 @@ namespace ApiAsp.Controllers
 
         [HttpPost]
         [Route("demo2")]
-        public IHttpActionResult demo2([FromBody] datos datos)
+        public IActionResult Demo2([FromBody] datos datos)
         {
             int IdJson = datos.IdJson.ToString() == "" ? 0 : datos.IdJson;
             string DatJson = datos.DatJson.ToString() == "" ? "0" : datos.DatJson.ToString();
@@ -71,7 +71,7 @@ namespace ApiAsp.Controllers
 
         [HttpPost]
         [Route("create")]
-        public IHttpActionResult create([FromBody] personaDatos datos)
+        public IActionResult Create([FromBody] personaDatos datos)
         {
             string[] DatJson = new string[4];
             string Nombres = datos.Nombres.ToString() == "" ? "0" : datos.Nombres.ToString();
@@ -108,7 +108,7 @@ namespace ApiAsp.Controllers
 
         [HttpPost]
         [Route("update")]
-        public IHttpActionResult update([FromBody] personaDatos datos)
+        public IActionResult Update([FromBody] personaDatos datos)
         {
             string[] DatJson = new string[4];
             int[] NumJson = new int[2];
@@ -150,7 +150,7 @@ namespace ApiAsp.Controllers
 
         [HttpPost]
         [Route("deactivate")]
-        public IHttpActionResult deactivate([FromBody] personaDatos datos)
+        public IActionResult Deactivate([FromBody] personaDatos datos)
         {
             int Id = datos.Id.ToString() == "" ? 0 : datos.Id;
 
@@ -178,7 +178,7 @@ namespace ApiAsp.Controllers
 
         [HttpPost]
         [Route("table")]
-        public IHttpActionResult table([FromBody] datos datos)
+        public IActionResult Table([FromBody] datos datos)
         {
             int Tabla = datos.Tabla.ToString() == "" ? 0 : datos.Tabla;
 
@@ -205,7 +205,7 @@ namespace ApiAsp.Controllers
 
         [HttpPost]
         [Route("search")]
-        public IHttpActionResult search([FromBody] datos datos)
+        public IActionResult Search([FromBody] datos datos)
         {
             string Busqueda = datos.Busqueda.ToString() == "" ? "0" : datos.Busqueda.ToString();
 
@@ -232,7 +232,7 @@ namespace ApiAsp.Controllers
 
         [HttpPost]
         [Route("persona")]
-        public IHttpActionResult persona([FromBody] personaDatos datos)
+        public IActionResult Persona([FromBody] personaDatos datos)
         {
             int Estatus = datos.Estatus.ToString() == "" ? 0 : datos.Estatus;
 

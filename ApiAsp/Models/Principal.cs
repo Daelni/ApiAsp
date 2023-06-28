@@ -1,9 +1,9 @@
-﻿using ApiAsp.Entities;
+﻿using Microsoft.Data.SqlClient;
+using ApiAsp.Entities;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Reflection.Metadata;
 
@@ -14,16 +14,16 @@ namespace ApiAsp.Models
         public int Numero { get; set; }
         public string Mensaje { get; set; }
 
-        static public DataTable Registrar(int Numero, string Mensaje)
+        public static DataTable Registrar(int Numero, string Mensaje)
         {
             BaseDatos _BaseDatos = new BaseDatos();
             DataTable _DataTable = new DataTable();
 
             string SentenciaSQL = "EXEC LaloSP1 @Numero, @Mensaje";
-            List<SqlParameter> Parametros = new List<SqlParameter>
+            List<Microsoft.Data.SqlClient.SqlParameter> Parametros = new List<Microsoft.Data.SqlClient.SqlParameter>
             {
-                new SqlParameter("@Numero", SqlDbType.Int) { Value = Numero },
-                new SqlParameter("@Mensaje", SqlDbType.VarChar) { Value = Mensaje }
+                new Microsoft.Data.SqlClient.SqlParameter("@Numero", SqlDbType.Int) { Value = Numero },
+                new Microsoft.Data.SqlClient.SqlParameter("@Mensaje", SqlDbType.VarChar) { Value = Mensaje }
             };
 
             _DataTable = _BaseDatos.ObtenerDataTable(SentenciaSQL, Parametros);
@@ -38,7 +38,7 @@ namespace ApiAsp.Models
             }
         }
 
-        static public respuestaRequest Registrar2(int Numero, string Mensaje)
+        public static respuestaRequest Registrar2(int Numero, string Mensaje)
         {
             respuestaRequest rRequest = new respuestaRequest();
             SqlClass miSqlClass = new SqlClass();
@@ -47,22 +47,19 @@ namespace ApiAsp.Models
             string JSONString = string.Empty;
             DataTable dtInfo = new DataTable();
 
-
-            //pasamos los parametros para mandarlos al sp
+            // Pasamos los parametros para mandarlos al sp
             List<parametro> parametros = new List<parametro>
-            {
-                new parametro() {nombre = "Numero", valor = Numero.ToString()},
-                new parametro() {nombre = "Mensaje", valor =  Mensaje},
+        {
+            new parametro() {nombre = "Numero", valor = Numero.ToString()},
+            new parametro() {nombre = "Mensaje", valor = Mensaje}
+        };
 
-            };
-
-            //parametro de salida del sp
+            // Parámetros de salida del sp
             List<parametro> parametrosOutput = new List<parametro>
-            {
-                new parametro() {nombre = "Err", tipoValor = parametro.tipoValorSalida.int_},
-                new parametro() {nombre = "ErrDescripcion", tipoValor = parametro.tipoValorSalida.string_}
-            };
-
+        {
+            new parametro() {nombre = "Err", tipoValor = parametro.tipoValorSalida.int_},
+            new parametro() {nombre = "ErrDescripcion", tipoValor = parametro.tipoValorSalida.string_}
+        };
 
             miSqlClass.funcStoreProcedureConsult("LaloSP2", ref dtInfo, parametros, parametrosOutput);
 
@@ -71,7 +68,6 @@ namespace ApiAsp.Models
                 rRequest.Err = parametrosOutput[0].valor;
                 rRequest.ErrDescripcion = parametrosOutput[1].valor;
             }
-
 
             if (dtInfo.Rows.Count > 0)
             {
@@ -230,7 +226,7 @@ namespace ApiAsp.Models
             return rRequest;
         }
 
-        static public respuestaRequest verTabla(int Numero)
+        static public respuestaRequest VerTabla(int Numero)
         {
             respuestaRequest rRequest = new respuestaRequest();
             SqlClass miSqlClass = new SqlClass();
@@ -271,7 +267,7 @@ namespace ApiAsp.Models
             return rRequest;
         }
 
-        static public respuestaRequest verResultado(string Busqueda)
+        static public respuestaRequest VerResultado(string Busqueda)
         {
             respuestaRequest rRequest = new respuestaRequest();
             SqlClass miSqlClass = new SqlClass();
@@ -312,7 +308,7 @@ namespace ApiAsp.Models
             return rRequest;
         }
 
-        static public respuestaRequest verPersona(int Estatus)
+        static public respuestaRequest VerPersona(int Estatus)
         {
             respuestaRequest rRequest = new respuestaRequest();
             SqlClass miSqlClass = new SqlClass();
@@ -354,4 +350,5 @@ namespace ApiAsp.Models
         }
 
     }
+
 }

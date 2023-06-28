@@ -6,3 +6,11 @@ C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.cspr
 C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.RazorAssemblyInfo.cache
 C:\Users\pilli\Desktop\COSITEC\ApiAsp\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.RazorAssemblyInfo.cs
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.csproj.AssemblyReference.cache
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.AssemblyInfoInputs.cache
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.AssemblyInfo.cs
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.csproj.CoreCompileInputs.cache
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.RazorAssemblyInfo.cache
+C:\Users\cositec-plata\Desktop\Daniel\ApiAsp\ApiAsp\obj\Debug\net6.0\ApiAsp.RazorAssemblyInfo.cs
