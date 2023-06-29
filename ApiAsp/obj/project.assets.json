@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Antlr/3.4.1.9004": {
+        "type": "package",
+        "compile": {
+          "lib/Antlr3.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/Antlr3.Runtime.dll": {}
+        }
+      },
       "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
@@ -44,6 +53,247 @@
           "lib/netstandard2.0/Azure.Identity.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "bootstrap/5.3.0": {
+        "type": "package",
+        "contentFiles": {
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.min.js": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "jQuery/3.7.0": {
+        "type": "package"
+      },
+      "Microsoft.AspNet.Web.Optimization/1.1.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0",
+          "WebGrease": "1.5.2"
+        },
+        "compile": {
+          "lib/net40/System.Web.Optimization.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Web.Optimization.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -286,6 +536,15 @@
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
             "related": ".pdb;.xml"
           }
+        }
+      },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
         }
       },
       "Microsoft.Win32.SystemEvents/6.0.0": {
@@ -724,10 +983,36 @@
             "rid": "win"
           }
         }
+      },
+      "WebGrease/1.5.2": {
+        "type": "package",
+        "dependencies": {
+          "Antlr": "3.4.1.9004",
+          "Newtonsoft.Json": "5.0.4"
+        },
+        "compile": {
+          "lib/WebGrease.dll": {}
+        },
+        "runtime": {
+          "lib/WebGrease.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Antlr/3.4.1.9004": {
+      "sha512": "c1S+HBE+KYA5EBxtn25LEK02hHPH/tDQ6RviUTTCJpZIPoputtn8ArsQJy9lVJWZOnw37ufByO2Fmf1M8wpr8Q==",
+      "type": "package",
+      "path": "antlr/3.4.1.9004",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "antlr.3.4.1.9004.nupkg.sha512",
+        "antlr.nuspec",
+        "lib/Antlr3.Runtime.dll",
+        "lib/Antlr3.Runtime.pdb"
+      ]
+    },
     "Azure.Core/1.25.0": {
       "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
@@ -764,6 +1049,142 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "bootstrap/5.3.0": {
+      "sha512": "Glct0CeNsN5ETcAmV4IsIGa8VEvnWphT4Wb+IaF7/4KAMaZjxpr0eZ8Uf6H/gWKPcUB2p235/3alyhmYBbU6FQ==",
+      "type": "package",
+      "path": "bootstrap/5.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bootstrap.5.3.0.nupkg.sha512",
+        "bootstrap.nuspec",
+        "bootstrap.png",
+        "content/Content/bootstrap-grid.css",
+        "content/Content/bootstrap-grid.css.map",
+        "content/Content/bootstrap-grid.min.css",
+        "content/Content/bootstrap-grid.min.css.map",
+        "content/Content/bootstrap-grid.rtl.css",
+        "content/Content/bootstrap-grid.rtl.css.map",
+        "content/Content/bootstrap-grid.rtl.min.css",
+        "content/Content/bootstrap-grid.rtl.min.css.map",
+        "content/Content/bootstrap-reboot.css",
+        "content/Content/bootstrap-reboot.css.map",
+        "content/Content/bootstrap-reboot.min.css",
+        "content/Content/bootstrap-reboot.min.css.map",
+        "content/Content/bootstrap-reboot.rtl.css",
+        "content/Content/bootstrap-reboot.rtl.css.map",
+        "content/Content/bootstrap-reboot.rtl.min.css",
+        "content/Content/bootstrap-reboot.rtl.min.css.map",
+        "content/Content/bootstrap-utilities.css",
+        "content/Content/bootstrap-utilities.css.map",
+        "content/Content/bootstrap-utilities.min.css",
+        "content/Content/bootstrap-utilities.min.css.map",
+        "content/Content/bootstrap-utilities.rtl.css",
+        "content/Content/bootstrap-utilities.rtl.css.map",
+        "content/Content/bootstrap-utilities.rtl.min.css",
+        "content/Content/bootstrap-utilities.rtl.min.css.map",
+        "content/Content/bootstrap.css",
+        "content/Content/bootstrap.css.map",
+        "content/Content/bootstrap.min.css",
+        "content/Content/bootstrap.min.css.map",
+        "content/Content/bootstrap.rtl.css",
+        "content/Content/bootstrap.rtl.css.map",
+        "content/Content/bootstrap.rtl.min.css",
+        "content/Content/bootstrap.rtl.min.css.map",
+        "content/Scripts/bootstrap.bundle.js",
+        "content/Scripts/bootstrap.bundle.js.map",
+        "content/Scripts/bootstrap.bundle.min.js",
+        "content/Scripts/bootstrap.bundle.min.js.map",
+        "content/Scripts/bootstrap.esm.js",
+        "content/Scripts/bootstrap.esm.js.map",
+        "content/Scripts/bootstrap.esm.min.js",
+        "content/Scripts/bootstrap.esm.min.js.map",
+        "content/Scripts/bootstrap.js",
+        "content/Scripts/bootstrap.js.map",
+        "content/Scripts/bootstrap.min.js",
+        "content/Scripts/bootstrap.min.js.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.min.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-grid.rtl.min.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.min.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-reboot.rtl.min.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.min.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap-utilities.rtl.min.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap.min.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.css.map",
+        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css",
+        "contentFiles/any/any/wwwroot/css/bootstrap.rtl.min.css.map",
+        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js",
+        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.js.map",
+        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js",
+        "contentFiles/any/any/wwwroot/js/bootstrap.bundle.min.js.map",
+        "contentFiles/any/any/wwwroot/js/bootstrap.esm.js",
+        "contentFiles/any/any/wwwroot/js/bootstrap.esm.js.map",
+        "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js",
+        "contentFiles/any/any/wwwroot/js/bootstrap.esm.min.js.map",
+        "contentFiles/any/any/wwwroot/js/bootstrap.js",
+        "contentFiles/any/any/wwwroot/js/bootstrap.js.map",
+        "contentFiles/any/any/wwwroot/js/bootstrap.min.js",
+        "contentFiles/any/any/wwwroot/js/bootstrap.min.js.map"
+      ]
+    },
+    "jQuery/3.7.0": {
+      "sha512": "Ao474k6pawdNMzmcObA8GtsqUg9vAMHhDsDEs5TZEc4nTy2vtv8wsBI2c4OyR1OEyNUJG3O2AvGZZlXmRLpoZg==",
+      "type": "package",
+      "path": "jquery/3.7.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/Scripts/jquery-3.7.0-vsdoc.js",
+        "Content/Scripts/jquery-3.7.0.js",
+        "Content/Scripts/jquery-3.7.0.min.js",
+        "Content/Scripts/jquery-3.7.0.min.map",
+        "Content/Scripts/jquery-3.7.0.slim.js",
+        "Content/Scripts/jquery-3.7.0.slim.min.js",
+        "Content/Scripts/jquery-3.7.0.slim.min.map",
+        "Tools/common.ps1",
+        "Tools/install.ps1",
+        "Tools/jquery-3.7.0.intellisense.js",
+        "Tools/uninstall.ps1",
+        "jquery.3.7.0.nupkg.sha512",
+        "jquery.nuspec"
+      ]
+    },
+    "Microsoft.AspNet.Web.Optimization/1.1.3": {
+      "sha512": "TWKKpTWEdB8jXp2Vl2TXNKW30GBQg6nnh0y8iZWmGY5c1XY4f649vfDslNHsCsvk9JZxc1Rkm/UGDdfq4gjWRQ==",
+      "type": "package",
+      "path": "microsoft.aspnet.web.optimization/1.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/System.Web.Optimization.dll",
+        "lib/net40/system.web.optimization.xml",
+        "microsoft.aspnet.web.optimization.1.1.3.nupkg.sha512",
+        "microsoft.aspnet.web.optimization.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -1161,6 +1582,18 @@
         "lib/netstandard2.0/Microsoft.SqlServer.Server.xml",
         "microsoft.sqlserver.server.1.0.0.nupkg.sha512",
         "microsoft.sqlserver.server.nuspec"
+      ]
+    },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "sha512": "FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "type": "package",
+      "path": "microsoft.web.infrastructure/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Microsoft.Web.Infrastructure.dll",
+        "microsoft.web.infrastructure.1.0.0.nupkg.sha512",
+        "microsoft.web.infrastructure.nuspec"
       ]
     },
     "Microsoft.Win32.SystemEvents/6.0.0": {
@@ -2036,12 +2469,31 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "WebGrease/1.5.2": {
+      "sha512": "VoyDSOOugLx3q5IyOgEcjeYZQOqV9VWZQT57UtN4szlYhAmOcEjVfKWXbtRqBuX43pgyL9E7nMSIPoryC8Cu1Q==",
+      "type": "package",
+      "path": "webgrease/1.5.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/WebGrease.dll",
+        "tools/WG.exe",
+        "tools/install.ps1",
+        "tools/uninstall.ps1",
+        "webgrease.1.5.2.nupkg.sha512",
+        "webgrease.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Bootstrap >= 5.3.0",
+      "Microsoft.AspNet.Web.Optimization >= 1.1.3",
       "Microsoft.Data.SqlClient >= 5.1.1",
-      "Newtonsoft.Json >= 13.0.3"
+      "Newtonsoft.Json >= 13.0.3",
+      "jQuery >= 3.7.0"
     ]
   },
   "packageFolders": {
@@ -2091,6 +2543,14 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Bootstrap": {
+            "target": "Package",
+            "version": "[5.3.0, )"
+          },
+          "Microsoft.AspNet.Web.Optimization": {
+            "target": "Package",
+            "version": "[1.1.3, )"
+          },
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[5.1.1, )"
@@ -2098,6 +2558,10 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
+          },
+          "jQuery": {
+            "target": "Package",
+            "version": "[3.7.0, )"
           }
         },
         "imports": [
@@ -2122,5 +2586,47 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Antlr 3.4.1.9004\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Antlr",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.AspNet.Web.Optimization 1.1.3\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.AspNet.Web.Optimization",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"Microsoft.Web.Infrastructure 1.0.0\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "Microsoft.Web.Infrastructure",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"WebGrease 1.5.2\" se restauró con \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1\" en lugar de la plataforma de destino del proyecto \"net6.0\". Puede que el paquete no sea totalmente compatible con el proyecto.",
+      "libraryId": "WebGrease",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
