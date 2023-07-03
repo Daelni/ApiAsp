@@ -4,6 +4,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Data.SqlTypes;
 using System.Reflection.Metadata;
 
@@ -16,14 +17,26 @@ namespace ApiAsp.Models
 
         public static DataTable Registrar(int Numero, string Mensaje)
         {
+            // Verificar el valor de Numero
+            if (Numero <= 0)
+            {
+                throw new ArgumentException("El valor de Numero debe ser mayor que cero.");
+            }
+
+            // Verificar el valor de Mensaje
+            if (string.IsNullOrEmpty(Mensaje))
+            {
+                throw new ArgumentException("El valor de Mensaje no puede ser nulo o vacío.");
+            }
+
             BaseDatos _BaseDatos = new BaseDatos();
             DataTable _DataTable = new DataTable();
 
             string SentenciaSQL = "EXEC LaloSP1 @Numero, @Mensaje";
-            List<Microsoft.Data.SqlClient.SqlParameter> Parametros = new List<Microsoft.Data.SqlClient.SqlParameter>
+            List<SqlParameter> Parametros = new List<SqlParameter>
             {
-                new Microsoft.Data.SqlClient.SqlParameter("@Numero", SqlDbType.Int) { Value = Numero },
-                new Microsoft.Data.SqlClient.SqlParameter("@Mensaje", SqlDbType.VarChar) { Value = Mensaje }
+                new SqlParameter("@Numero", SqlDbType.Int) { Value = Numero },
+                new SqlParameter("@Mensaje", SqlDbType.VarChar) { Value = Mensaje }
             };
 
             _DataTable = _BaseDatos.ObtenerDataTable(SentenciaSQL, Parametros);
@@ -37,6 +50,8 @@ namespace ApiAsp.Models
                 return null;
             }
         }
+
+
 
         public static respuestaRequest Registrar2(int Numero, string Mensaje)
         {

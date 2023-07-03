@@ -25,7 +25,6 @@ namespace ApiAsp.Controllers
             try
             {
                 Retorno = Principal.Registrar(IdJson, DatJson);
-
                 Response = new
                 {
                     Estado = true,
@@ -186,7 +185,7 @@ namespace ApiAsp.Controllers
             dynamic Retorno = null;
             try
             {
-                Retorno = Principal.verTabla(Tabla);
+                Retorno = Principal.VerTabla(Tabla);
 
                 Response = new
                 {
@@ -213,7 +212,7 @@ namespace ApiAsp.Controllers
             dynamic Retorno = null;
             try
             {
-                Retorno = Principal.verResultado(Busqueda);
+                Retorno = Principal.VerResultado(Busqueda);
 
                 Response = new
                 {
@@ -240,7 +239,7 @@ namespace ApiAsp.Controllers
             dynamic Retorno = null;
             try
             {
-                Retorno = Principal.verPersona(Estatus);
+                Retorno = Principal.VerPersona(Estatus);
 
                 Response = new
                 {
